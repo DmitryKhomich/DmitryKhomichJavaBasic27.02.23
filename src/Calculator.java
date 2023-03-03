@@ -1,7 +1,7 @@
 import java.util.Locale;
 import java.util.Scanner;
 
-public class HelloWorld {
+public class Calculator {
     public static void main(String[] args) {
         int firstNumberInt = 0;
         int secondNumberInt = 0;
