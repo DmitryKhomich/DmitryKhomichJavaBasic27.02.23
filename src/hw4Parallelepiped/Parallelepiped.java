@@ -26,7 +26,7 @@ public class Parallelepiped {
             throw new RuntimeException("Вы ввели не целое число!");
         }
         volume = width * lengthOfParallelepiped * height;
-        length = width + height + lengthOfParallelepiped;
+        length = 2*(2*(width + lengthOfParallelepiped)) + 2*(2*(lengthOfParallelepiped + height)) + 2*(2*(width + height));
         System.out.println("Объем параллелепипеда = " + volume);
         System.out.println("Суммарная длина = " + length);
     }
