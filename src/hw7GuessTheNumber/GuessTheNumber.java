@@ -15,10 +15,10 @@ public class GuessTheNumber {
         System.out.println("Введи число, попытка 1: ");
         if (scanner.hasNextInt()){
             if(scanner.nextInt() == secretNumber){
-                System.out.println("Ты угадал, поздравляю! ");
+                System.out.println("Ты угадал, поздравляю!");
                return;
             }else{
-                System.out.println("Ты не угадал! Осталось 2 попытки ");
+                System.out.println("Ты не угадал! Осталось 2 попытки");
             }
         }else{
             throw new RuntimeException("Ты ввел не целое число!");
@@ -35,14 +35,13 @@ public class GuessTheNumber {
         }
         if (scanner.hasNextInt()){
             if(scanner.nextInt() == secretNumber){
-                System.out.println("Ты угадал, поздравляю");
+                System.out.println("Ты угадал, поздравляю!");
                 return;
             }else{
-                System.out.println("Ты не угадал! Программа завершина ");
+                System.out.println("Ты не угадал! Программа завершина");
             }
         }else{
             throw new RuntimeException("Ты ввел не целое число!");
         }
-
     }
 }
