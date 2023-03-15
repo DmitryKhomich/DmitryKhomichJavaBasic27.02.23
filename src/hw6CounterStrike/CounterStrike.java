@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 
 public class CounterStrike {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         String firstTeamName, secondTeamName;
         int firstFragFirstTeam, secondFragFirstTeam, thirdFragFirstTeam, fourthFragFirstTeam, fifthFragFirstTeam;
