@@ -1,13 +1,23 @@
 package hw8Shuttles;
 
+import java.util.*;
+
 public class Shuttles {
     public static void main(String[] args) {
 
-        for (int i = 0; i <= 100; i++) {
-            if(Integer.toString(i).contains("4") || Integer.toString(i).contains("9")){
-               continue;
+        var shuttleSet = new HashSet<Integer>();
+        Integer count = 0;
+        while(shuttleSet.size() < 100){
+
+            if(count.toString().contains("4") || count.toString().contains("9") || count.toString().equals("0")){
+                count++;
+                continue;
             }
-            System.out.println(i);
+            shuttleSet.add(count);
+            count ++;
+        }
+        for(Integer print : shuttleSet){
+            System.out.println(print);
         }
     }
 }
