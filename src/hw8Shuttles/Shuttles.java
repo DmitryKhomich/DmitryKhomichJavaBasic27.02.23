@@ -5,7 +5,7 @@ import java.util.*;
 public class Shuttles {
     public static void main(String[] args) {
 
-        var shuttleSet = new HashSet<Integer>();
+        var shuttleSet = new ArrayList<Integer>();
         Integer count = 0;
         while(shuttleSet.size() < 100){
 
