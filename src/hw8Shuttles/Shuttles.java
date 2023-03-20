@@ -5,18 +5,18 @@ import java.util.*;
 public class Shuttles {
     public static void main(String[] args) {
 
-        var shuttleSet = new ArrayList<Integer>();
+        var shuttleList = new ArrayList<Integer>();
         Integer count = 0;
-        while(shuttleSet.size() < 100){
+        while(shuttleList.size() < 100){
 
             if(count.toString().contains("4") || count.toString().contains("9") || count.toString().equals("0")){
                 count++;
                 continue;
             }
-            shuttleSet.add(count);
+            shuttleList.add(count);
             count ++;
         }
-        for(Integer print : shuttleSet){
+        for(Integer print : shuttleList){
             System.out.println(print);
         }
     }
