@@ -1,4 +1,4 @@
-package hw11.Matrices;
+package hw11Matrices;
 
 import java.util.Arrays;
 import java.util.Scanner;
