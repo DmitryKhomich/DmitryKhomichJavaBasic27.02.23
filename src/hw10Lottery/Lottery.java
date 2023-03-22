@@ -40,7 +40,11 @@ public class Lottery {
                 elements.add(i);
             }
         }
-        System.out.println("совпали такие элементы: " + elements);
+        if(elements.isEmpty()) {
+            System.out.println("К сожалению, совпадений нет");
+        } else {
+            System.out.println("совпали такие элементы: " + elements);
+        }
         System.out.println("количество совпадений: " + countMatches);
     }
 }
