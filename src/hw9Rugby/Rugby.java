@@ -30,4 +30,6 @@ public class Rugby {
         System.out.println("Средний возраст второй команды: " + averageAge(secondTeam));
 
     }
+
+
 }
