@@ -28,8 +28,5 @@ public class Rugby {
         fillRandomNumbersFrom18To40(secondTeam);
         System.out.println("Средний возраст первой команды: " + averageAge(firstTeam));
         System.out.println("Средний возраст второй команды: " + averageAge(secondTeam));
-
     }
-
-
 }
