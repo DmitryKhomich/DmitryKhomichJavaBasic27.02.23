@@ -1,4 +1,4 @@
-package hw6.Rugby;
+package hw6Rugby;
 
 import java.util.Random;
 
