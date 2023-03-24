@@ -17,7 +17,7 @@ public class Rugby {
         for (int i = 0; i < array.length; i++) {
             sum += array[i];
         }
-        result = sum / array.length;
+        result = (double) sum / array.length;
         return result;
     }
 
