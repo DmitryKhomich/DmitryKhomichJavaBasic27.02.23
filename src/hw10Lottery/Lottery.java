@@ -43,7 +43,7 @@ public class Lottery {
         if(elements.isEmpty()) {
             System.out.println("К сожалению, совпадений нет");
         } else {
-            System.out.println("совпали такие элементы: " + elements);
+            System.out.println("совпали элементы с такими индексами: " + elements);
         }
         System.out.println("количество совпадений: " + countMatches);
     }
