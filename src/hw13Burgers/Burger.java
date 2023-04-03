@@ -34,7 +34,4 @@ public class Burger {
         this.greenery = greenery;
         System.out.println("This is diet burger. Composition  of this burger --> " + "Bun: " + this.bun + "; Cheese: " + this.cheese + "; Meat: " + this.meat +  "; Greenery: " + this.greenery);
     }
-
-
-
 }
