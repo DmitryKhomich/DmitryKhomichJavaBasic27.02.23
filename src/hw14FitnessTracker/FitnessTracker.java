@@ -11,12 +11,12 @@ public class FitnessTracker {
         printAccountInfo(oleg);
         printAccountInfo(yana);
 
-        marina.stepsCount = 2000;
-        marina.pressure = 60;
-        marina.weight = 90;
-        oleg.weight = 110;
-        oleg.pressure = 40;
-        oleg.lastName = "Shevchenko";
+        marina.setStepsCount(2000);
+        marina.setPressure(60);
+        marina.setWeight(90);
+        oleg.setWeight(110);
+        oleg.setPressure(40);
+        oleg.setLastName("Shevchenko");
         System.out.println();
         printAccountInfo(marina);
         printAccountInfo(oleg);

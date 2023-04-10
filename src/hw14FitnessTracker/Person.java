@@ -10,10 +10,10 @@ public class Person {
     private final String email;
     private final long phone;
 
-    public String lastName;
-    public int weight;
-    public int pressure;
-    public int stepsCount;
+    private String lastName;
+    private int weight;
+    private int pressure;
+    private int stepsCount;
 
     private static int age;
 
@@ -28,6 +28,42 @@ public class Person {
         this.weight = weight;
         this.pressure = pressure;
         this.stepsCount = stepsCount;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public int getPressure() {
+        return pressure;
+    }
+
+    public void setPressure(int pressure) {
+        this.pressure = pressure;
+    }
+
+    public int getStepsCount() {
+        return stepsCount;
+    }
+
+    public void setStepsCount(int stepsCount) {
+        this.stepsCount = stepsCount;
+    }
+
+    public static void setAge(int age) {
+        Person.age = age;
     }
 
     public int getAge() {
