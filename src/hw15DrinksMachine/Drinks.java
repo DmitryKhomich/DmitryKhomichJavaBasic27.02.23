@@ -91,6 +91,8 @@ public class Drinks {
             case LEMONADE:
                 total += PRICE_OF_LEMONADE;
                 break;
+            default:
+                total += 0;
         }
         return total;
     }
@@ -102,21 +104,22 @@ public class Drinks {
         int count = 0;
         int totalPrice = 0;
         try {
-        while (scanner.hasNextLine()) {
-            String drink = scanner.nextLine();
-            if (drink.equalsIgnoreCase("STOP")) {
-                break;
-            } else {
-                chooseDrink(drink);
-                count++;
-                totalPrice += totalSum(drink);
+            while (scanner.hasNextLine()) {
+                String drink = scanner.nextLine();
+                if (drink.equalsIgnoreCase("STOP")) {
+                    break;
+                } else {
+                    chooseDrink(drink);
+                    count++;
+                    totalPrice += totalSum(drink);
+                }
             }
         }
-        } catch (RuntimeException e){
-                throw new RuntimeException("Это не название напитка, либо у нас такого нет");
-            }
+        catch (IllegalArgumentException e){
+            System.out.println("Это не название напитка, либо у нас его нет в ассортименте");
+        }
         finally {
-            System.out.println("Итак, ты заказал всего напитков " + count + " твой счет составил: " + totalPrice + " грн");
+            System.out.println("Итак, ты заказал всего напитков " + count + " твой счет составил: " + totalPrice + " грн" + " и не забудь накинуть мне на чай");
         }
     }
 }
